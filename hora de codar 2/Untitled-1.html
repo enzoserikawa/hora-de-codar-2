@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+
+
+function exe01(){
+
+
+var numero1 = window.prompt('Informe um numero')
+var numero2 = window.prompt('Informe outro numero')
+
+if(numero1>numero2){
+window.alert('O numero maior é ' + numero1);
+}
+
+else{
+    window.alert('O numero maior é ' + numero2)
+}
+}
+
+
+
+function exe02(){
+
+var numero=window.prompt('Informe um numero')
+
+if(numero > 0){
+    window.alert('Esse numero é positivo')}
+
+else if (valor == 0){
+    window.alert('Esse numero é igual a 0')
+}
+else if(valor < 0){
+    window.alert('Esse numero é negativo')
+}    
+}
+
+function exe03(){
+
+var numero1=window.prompt("Informe um numero")
+var numero2=window.prompt("Informe um segundo numero")
+var numero3=window.prompt("Informe um terceiro numero")
+
+if(numero1 > numero2 && numero1 > numero3){
+    alert( numero1 + " é maior ");
+}
+if(numero1 > numero2 && numero1 > numero3){
+    alert( numero2 + " é maior ");
+}
+if(numero3 > numero1 && numero3 > numero2){
+   alert( numero3 + " é maior ");
+}
+}
+
+function exe04(){
+
+var numero1 = parseInt(prompt("Digite o primeiro número"));
+var numero2 = parseInt(prompt("Digite o segundo número"));
+var numero3 = parseInt(prompt("Digite o terceiro número"));
+
+
+if (numero1 > numero3 && numero2 > numero3) {
+    alert(" O resultado da soma é " + (numero1 + numero2)) ;
+} 
+
+else if (numero2 < numero1 && numero2 < numero3) {
+    alert( " O resultado da soma é " + (numero1 + numero3));
+} 
+
+ else if (numero2 > numero1 && numero3 > numero1){
+    alert( " O resultado da soma é " + (numero2 + numero3));
+}
+}
+
+function exe05(){
+
+var numero1 = parseInt(prompt("Digite um numero"));
+var numero2 = parseInt(prompt("Digite um numero"));
+var numero3 = parseInt(prompt("Digite um numero"));
+var numero4 = parseInt(prompt("Digite um numero"));
+var numero5 = parseInt(prompt("Digite um numero"));
+var numero6 = parseInt(prompt("Digite um numero"));
+var media = parseInt(numero1 + numero2 + numero3 + numero4 + numero5 + numero6);
+
+alert( "1º="+ numero1 + " 2º="+ numero2 +" 3º= " + numero3 +" 4º=" + numero4 +" 5º=" + numero5 +" 6º=" + numero6 );
+
+alert ("Média aritmética =" + (media / 6));
+}
+
+function exe06(){
+
+var numero1 = parseInt(prompt("Escreva um numero"));
+var numero2 = parseInt(prompt("Escreva um numero"));
+var numero3 = parseInt(prompt("Escreva um numero"));
+var numero4 = parseInt(prompt("Escreva um numero"));
+
+if (numero1 > numero2 && numero1 > numero3 && numero1 > numero4) {
+   alert("Primeiro valor: " + numero1  + " " + "Ultimo valor: " + numero4   + " " + "Maior valor: " + numero1 )
+}
+
+if (numero2 > numero1 && numero2 > numero3 && numero2 > numero4) {
+    alert("Primeiro valor: " + numero1   + " "  + "Ultimo valor: " + numero4   + " " +  "Maior valor: " + numero2 )
+
+}
+
+if (numero3 > numero1 && numero3 > numero2 && numero3 > numero4) {
+    alert("Primeiro valor: " + numero1   + " " + "Ultimo valor: " + numero4  + " " + "Maior valor: " + numero3 )
+
+}
+
+if (numero4 > numero1 && numero4 > numero2 && numero4 > numero3) {
+    alert("Primeiro valor: " + numero1   + " " +"Ultimo valor: " + numero4  + " " +  "Maior valor: " + numero4 )
+
+}
+}
+
+function exe07(){
+
+var soma = 0;
+var numero1 = parseInt(prompt("Digite um numero: "));
+var numero2 = parseInt(prompt("Digite um numero: "));
+var numero3 = parseInt(prompt("Digite um numero: "));
+var numero4 = parseInt(prompt("Digite um numero: "));
+var numero5 = parseInt(prompt("Digite um numero: "));
+var numero6 = parseInt(prompt("Digite um numero: "));
+
+
+if (numero1 <= 72){
+   soma += numero1;
+}
+if (numero2 <= 72){
+    soma += numero2;
+} 
+if (numero3 <= 72){
+    soma += numero3;
+}
+if (numero4 <= 72){
+    soma += numero4;
+}
+if (numero5 <= 72){
+    soma += numero5;
+}
+if (numero6 <= 72){
+    soma += numero6;
+}
+
+
+alert("Os numero digitados : " + numero1 + ', ' + numero2 + ', ' + numero3 + ', ' + numero4 + ', ' + numero5 + ', ' + numero6);
+
+alert("O resultado da soma é " + soma + " ");
+}
+
+function exe08(){
+
+var soma = 0;
+var numero1 = parseInt(prompt("Digite o primeiro valor: "));
+var numero2 = parseInt(prompt("Digite o segundo valor: "));
+var numero3 = parseInt(prompt("Digite o terceiro valor: "));
+var numero4 = parseInt(prompt("Digite o quarto valor: "));
+var media = (numero1 + numero2 + numero3 + numero4) / 4;
+
+alert("A sua média é " + media);
+
+
+       if (media < 5){
+           soma += numero1;
+           alert("tente novamente");
+       }
+       if (media > 5){
+            soma += numero2;
+            alert("Você foi aprovado");
+       }
+}
+
+function exe09(){
+
+       var data = parseInt(prompt("Digite seu ano de nascimento: "));
+
+if (data < 2006){
+    alert("Parabéns! Você já tem idade suficiente para votar.")
+} 
+
+else{
+    alert("Que pena! Você ainda não tem a idade minima para poder votar.")
+}
+}
+
+function exe10(){
+
+var altura = parseFloat(prompt("Digite a sua altura:"));
+var sexo = parseInt(prompt(" Digite 1 para Masculino " + " e 2 para Feminino "));
+
+if (sexo == 1) {
+  alert("O seu peso ideial é de :" + (72.7 * altura - 58) + "kilos");
+}
+
+else if (sexo == 2) {
+  alert("O seu peso ideial é de:" + (62.1 * altura - 44.7) + "kilos");
+}
+else {
+  alert("Algo deu errado. Tente novamente.") ;
+}
+}
+
+function exe11(){
+
+var tipo = parseInt(prompt("Digite a operação voce deseja usar: sendo 1.Adição, 2.Subtração, 3.Multiplicação e 4.Divisão"))
+var numero1 = parseInt(prompt("Digite um numero:"));
+var numero2 = parseInt(prompt("Digite outro numero: "));
+var resultado= 0;
+
+if(tipo == 1){
+    resultado = numero1 + numero2;
+    alert ("O resultado da conta é " + resultado);
+}
+
+else if(tipo == 2){
+    resultado = numero1 - numero2;
+    alert ("O resultado da operação é " + resultado);
+}
+
+else if(tipo == 3){
+    resultado = numero1 * numero2;
+    alert ("O resultado da conta é " + resultado);
+}
+
+else if (tipo == 4){
+    resultado = numero1 / numero2;
+    alert ("O resultado da conta é  " + resultado);
+
+}
+else{
+    alert("Algo deu errado. Tente novamente.");
+}
+}
+
+
+let escolha = parseFloat(prompt("escolha a opção desejada 1) exe01 2 exe02 3) exe03 4) exe04 5)exe05 6)exe06 7)exe07 8)exe08 9)exe09 10)exe10 11)exe11"));
+
+switch(escolha){
+   case 1:
+    exe01();
+    break;
+   
+   case 2:
+    exe02();
+    break;
+   
+   case 3:
+    exe03();
+    break;
+   
+   case 4:
+    exe04();
+    break;
+   
+   case 5:
+    exe05();
+    break;
+   
+   case 6:
+    exe06();
+    break;
+   
+   case 7:
+    exe07();
+    break;
+   
+   case 8:
+    exe08();
+    break;
+   
+   case 9:
+    exe09();
+    break;
+   
+   case 10:
+    exe10();
+    break;
+   
+   case 11:
+    exe11();
+    break;
+   
+  
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
